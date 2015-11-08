@@ -1,6 +1,6 @@
-require 'rubygems'
 require 'sinatra'
-require 'tilt/erb'
+require 'thin'
+set :server, 'thin'
 
 helpers do
   def h(text)
